@@ -42,7 +42,7 @@ function ItemListContainer(props) {
               <br/>
 
               <p>
-                En construcción </p>
+                 </p>
                 
             </div>
         </div>

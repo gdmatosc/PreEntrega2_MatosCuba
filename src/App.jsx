@@ -33,18 +33,18 @@ function App() {
         </Routes>
       </BrowserRouter>
       
-      
-      
-      {/* <ItemListContainer text="Bienvenidos!!"/> */}
-      
-      {/* <ItemDetailContainer /> */} 
     
     </div>
   )
 }
 
 export default App
+
 /* #region comentarios */
+
+{/* <ItemListContainer text="Bienvenidos!!"/> */}
+      
+{/* <ItemDetailContainer /> */} 
 // 1.box1 - u.r, u.a, f-f
 // {/* 1.1.item1 - u.r, u.a, f-f, t.cnt, cnt */}
 // {/* 1.2.box1.2 - u.r, u.a, f-f, t.cnt, cnt */}
