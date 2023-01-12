@@ -6,6 +6,16 @@ import { getProductos } from '../services/mockService'
 
 function ItemDetailContainer() {
   const [productos,setProductos]=useState([])
+  const [counter,setCounter]=useState(0)
+  const increase=()=>{
+    setCounter(count=>count+1)
+  }
+  const decrease=()=>{
+    if (counter>0){
+        setCounter(count=>count-1)
+    }  
+  }
+
   let params=useParams()  
   console.log(params)
  
@@ -20,7 +30,14 @@ function ItemDetailContainer() {
   console.log(productos)
 
   return (
-    <ItemDetail title={productos.title} imgurl={productos.imgurl} category={productos.category} price={productos.price}/> 
+    <ItemDetail 
+        title={productos.title} 
+        imgurl={productos.imgurl} 
+        category={productos.category} 
+        price={productos.price} 
+        counter={counter} 
+        increase={increase}
+        decrease={decrease}  /> 
   )
 }
 
